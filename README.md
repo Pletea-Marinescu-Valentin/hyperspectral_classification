@@ -58,7 +58,7 @@ Prerequisites
 
 Ensure you have **Python 3.8+** installed.
 
-## Install Dependencies
+Install Dependencies
 
 Install required Python libraries using:
 ```bash
@@ -88,7 +88,7 @@ Visualization:
 
 Graphical comparison of model performance using bar charts.
 
-📝 Output
+## 📝 Output
 Example Comparison Report
 Model	Accuracy	Precision	Recall	F1 Score
 Random Forest	0.928875	0.964312	0.957836	0.959919
@@ -97,7 +97,7 @@ Outputs saved in the results/ folder:
 Comparison Table: comparison_table.csv
 Metrics Report: metrics_report.txt
 Visualization Plots: comparison_plots.png
-⚙️ Customization
+## ⚙️ Customization
 Modify the following parameters for your specific use case:
 
 PCA Components: Adjust the number of principal components in pca.py:
@@ -109,7 +109,7 @@ Model Hyperparameters: Edit configurations in respective model scripts:
 
 Random Forest: Adjust n_estimators, max_depth, etc., in random_forest.py.
 Neural Networks: Modify layers, activation functions, and epochs in neural_network.py.
-🌟 Key Highlights
+## 🌟 Key Highlights
 Hyperspectral Data Analysis: Leveraging hyperspectral image data for precise classification.
 Advanced Machine Learning: Employing state-of-the-art supervised learning models.
 Customizable and Modular: Designed for scalability and adaptability across datasets.
