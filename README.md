@@ -6,51 +6,32 @@ This project focuses on supervised classification of hyperspectral images using 
 
 ## 🏗️ Project Structure
 
+``` plaintext
 📂 hyperspectral_classification
 
 ├── 📁 data/                     # Dataset folder
-
 │   └── Salinas.mat              # Hyperspectral image data
-
 │   └── Salinas_gt.mat           # Ground truth labels
-
 ├── 📁 preprocessing/            # Preprocessing scripts
-
 │   ├── data_cleaning.py         # Data normalization and filtering
-
 │   ├── data_scaling.py          # Data scaling utilities
-
 │   ├── data_loading.py          # Data loading
-
 │   ├── pca.py                   # PCA for dimensionality reduction
-
 ├── 📁 models/                   # Model implementations
-
 │   ├── random_forest.py         # Random Forest implementation
-
 │   ├── neural_network.py        # Neural Network implementation
-
 ├── 📁 evaluation/               # Evaluation and visualization scripts
-
 │   ├── metrics.py               # Metrics calculation
-
 │   ├── visualization.py         # Graphical comparison of results
-
 ├── 📁 scripts/                  # Workflow orchestration and reporting
-
 │   ├── batch_processing.py      # Handles end-to-end processing
-
 │   ├── report_generator.py      # Generates detailed reports
-
 ├── 📁 results/                  # Output folder for metrics and visualizations
-
 ├── workflow.py                  # Workflow orchestration
-
 ├── main.py                      # Main entry point for the project
-
 ├── requirements.txt             # Required libraries
-
 └── README.md                    # Project documentation
+```
 
 ## 📥 Setup Instructions
 
