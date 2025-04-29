@@ -1,5 +1,6 @@
 import numpy as np
 from sklearn.preprocessing import StandardScaler
+from multiprocessing import Pool
 
 def normalize_data(data):
     """
@@ -52,6 +53,20 @@ def clean_data(data, ground_truth):
     cleaned_data, cleaned_labels = filter_valid_labels(normalized_data, ground_truth)
     return cleaned_data, cleaned_labels
 
+def parallel_cleaning(data, num_processes=4):
+    """
+    Cleans data in parallel using multiple processes.
+
+    Args:
+        data (list): The data to be cleaned.
+        num_processes (int): Number of processes to use.
+
+    Returns:
+        list: Cleaned data.
+    """
+    with Pool(num_processes) as pool:
+        cleaned_data = pool.map(clean_data, data)
+    return cleaned_data
 
 if __name__ == "__main__":
     # Example usage (requires data and ground_truth from data_loading module)
