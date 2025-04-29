@@ -90,3 +90,38 @@ pca = PCA(n_components=30, random_state=42)
 - Hyperspectral Data Analysis: Leveraging hyperspectral image data for precise classification.
 - Advanced Machine Learning: Employing state-of-the-art supervised learning models.
 - Customizable and Modular: Designed for scalability and adaptability across datasets.
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Missing Dependencies**:
+   - Ensure all dependencies are installed using `pip install -r requirements.txt`.
+   - Verify Python version is 3.8 or higher.
+
+2. **Dataset Errors**:
+   - Confirm that `Salinas.mat` and `Salinas_gt.mat` are present in the `data/` folder.
+   - Check file permissions if loading fails.
+
+3. **Visualization Issues**:
+   - Ensure `matplotlib` and `seaborn` are installed.
+   - Verify that the `results/` folder is writable.
+
+## Usage Examples
+
+### Running the Project
+
+1. Preprocess the data:
+   ```bash
+   python preprocessing/data_cleaning.py
+   ```
+
+2. Train models:
+   ```bash
+   python models/random_forest.py
+   ```
+
+3. Generate reports:
+   ```bash
+   python scripts/report_generator.py
+   ```
